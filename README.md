@@ -4,6 +4,10 @@ WebVR experiment using [A-Frame](https://github.com/aframevr/aframe/).
 
 ### Local Development
 
+To install dependencies, run:
+
+    npm install
+
 To serve the site from a simple Node development server:
 
     npm start
