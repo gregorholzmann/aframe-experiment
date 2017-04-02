@@ -11,20 +11,30 @@
 		<script src="node_modules/aframe-event-set-component/dist/aframe-event-set-component.min.js"></script>
 		<script src="node_modules/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
 		<script src="node_modules/aframe-extras/dist/aframe-extras.min.js"></script>
-		<script src="components/set-image.js"></script>
-		<script src="components/update-raycaster.js"></script>
+		<script src="./components/collider-check.js"></script>
   </head>
   <body>
-	  <a-scene>
+	  <a-scene debug stats fog="type: linear; color: #AAA">
 
 	    <a-assets>
-	      <audio id="click-sound" src="audio/click.ogx"></audio>
-	      <a-mixin id="checkpoint"></a-mixin>
         <a-mixin id="checkpoint-hovered" color="#6CEEB5"></a-mixin>
 				<audio id="ambient" src="audio/river.mp3" preload="auto"></audio>
+				<script id="checkpoint" type="text/nunjucks">
+						<a-cylinder 
+							checkpoint="offset: 0 1.6 0" 
+							radius="1" 
+							height="0.1" 
+							color="#39BB82">
+								<a-animation begin="mouseenter" fill="backwards" attribute="color" from="#39BB82"
+									to="#FFFFFF" dur="500"></a-animation>
+									<a-animation begin="mouseleave" fill="forwards" attribute="color" from="#FFFFFF"
+									to="#39BB82" dur="500"></a-animation>
+						</a-cylinder>
+	      </script>
 			</a-assets>
 
-			<a-plane height="100" width="100" color="#8D8D8D" rotation="-90 0 0"></a-plane>
+			<a-grid></a-grid>
+			<a-sky color="#6EBAA7"></a-sky>
 
 			<a-entity camera="userHeight: 1.6"
 									universal-controls="movementControls: checkpoint"
@@ -33,19 +43,23 @@
 										position="0 0 -1"
 										geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
 										material="color: #CCC; shader: flat;">
+						  <a-animation begin="click" easing="ease-in" attribute="scale"
+               fill="backwards" from="0.5 0.5 0.5" to="1 1 1"></a-animation>
+							<a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+													fill="forwards" from="1 1 1" to="0.5 0.5 0.5"></a-animation>
 					</a-entity>
 			</a-entity>
 
 			<a-entity position="0 0 0">
 				<a-entity position="0 0 0">
-					<a-cylinder checkpoint="offset: 0 1.6 0" radius="1" height="0.1" color="#39BB82"></a-cylinder>
+					<a-entity template="src: #checkpoint"></a-entity>
 				</a-entity>
 				<a-entity position="0 0 -10">
 					<a-text value="LOOK AT ME!\nCLICK ON ME!" height="5" width="5" align="center" letterspacing="2" position="0 .5 1"></a-text>
-					<a-cylinder checkpoint="offset: 0 1.6 0" radius="1" height="0.1" color="#39BB82"></a-cylinder>
+					<a-entity template="src: #checkpoint"></a-entity>
 				</a-entity>
 				<a-entity position="0 0 -20">
-					<a-cylinder checkpoint="offset: 0 1.6 0" radius="1" height="0.1" color="#39BB82"></a-cylinder>
+					<a-entity template="src: #checkpoint"></a-entity>
 				</a-entity>
 			</a-entity>
 
