@@ -9,27 +9,23 @@
 		<script src="node_modules/aframe-template-component/dist/aframe-template-component.min.js"></script>
 		<script src="node_modules/aframe-layout-component/dist/aframe-layout-component.min.js"></script>
 		<script src="node_modules/aframe-event-set-component/dist/aframe-event-set-component.min.js"></script>
-		<script src="node_modules/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
 		<script src="node_modules/aframe-extras/dist/aframe-extras.min.js"></script>
 		<script src="./components/collider-check.js"></script>
+		<script src="./components/hover-handler.js"></script>
   </head>
   <body>
 	  <a-scene debug stats fog="type: linear; color: #AAA">
 
 	    <a-assets>
-        <a-mixin id="checkpoint-hovered" color="#6CEEB5"></a-mixin>
 				<audio id="ambient" src="audio/river.mp3" preload="auto"></audio>
 				<script id="checkpoint" type="text/nunjucks">
-						<a-cylinder 
-							checkpoint="offset: 0 1.6 0" 
-							radius="1" 
-							height="0.1" 
-							color="#39BB82">
-								<a-animation begin="mouseenter" fill="backwards" attribute="color" from="#39BB82"
-									to="#FFFFFF" dur="500"></a-animation>
-									<a-animation begin="mouseleave" fill="forwards" attribute="color" from="#FFFFFF"
-									to="#39BB82" dur="500"></a-animation>
-						</a-cylinder>
+					<a-cylinder 
+						radius="1"
+						height="0.1"
+						color="#39BB82"
+						checkpoint="offset: 0 1.6 0"
+						handle-hover>
+					</a-cylinder>
 	      </script>
 			</a-assets>
 
