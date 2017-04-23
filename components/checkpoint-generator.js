@@ -10,7 +10,7 @@ AFRAME.registerComponent('checkpoint-generator', {
       checkpointEl.setAttribute('color', '#39BB82');
       checkpointEl.setAttribute('position', {x: 0, y: 0, z: -(10 * i)});
       checkpointEl.setAttribute('checkpoint', {'offset': '0 1.6 0'});       
-      checkpointEl.setAttribute('handle-hover');     
+      checkpointEl.setAttribute('handle-hover', true);     
       sceneEl.appendChild(checkpointEl);
     }
   }
