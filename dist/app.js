@@ -63,12 +63,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 52);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 45:
+/******/ ([
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports) {
 
 AFRAME.registerComponent('checkpoint-generator', {
@@ -90,8 +90,7 @@ AFRAME.registerComponent('checkpoint-generator', {
 });
 
 /***/ }),
-
-/***/ 46:
+/* 2 */
 /***/ (function(module, exports) {
 
       AFRAME.registerComponent('frame-generator', {
@@ -121,8 +120,7 @@ AFRAME.registerComponent('checkpoint-generator', {
 
 
 /***/ }),
-
-/***/ 47:
+/* 3 */
 /***/ (function(module, exports) {
 
 AFRAME.registerComponent('frame-hover', {
@@ -136,37 +134,38 @@ AFRAME.registerComponent('frame-hover', {
 });
 
 /***/ }),
-
-/***/ 48:
+/* 4 */
 /***/ (function(module, exports) {
 
 AFRAME.registerComponent('handle-hover', {
-        init: function () {
-          var el = this.el;
-          el.addEventListener('mouseenter', function () {
-            console.log('hi');
-            el.setAttribute('color', '#a442f4');  
-          });
-          el.addEventListener('mouseleave', function () {
-            el.setAttribute('color', '#39BB82');  
-          });
-        } 
-      });
+  init: function () {
+    var el = this.el;
+    el.addEventListener('mouseenter', function () {
+      console.log('hi');
+      el.setAttribute('color', '#a442f4');  
+    });
+    el.addEventListener('mouseleave', function () {
+      el.setAttribute('color', '#39BB82');  
+    });
+  } 
+});
 
 /***/ }),
-
-/***/ 52:
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_hover_handler_js__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_hover_handler_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_hover_handler_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_hover_handler_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_frame_hover_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_frame_hover_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_frame_hover_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_frame_hover_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_frame_generator_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_frame_generator_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_frame_generator_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_frame_generator_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_checkpoint_generator_js__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_checkpoint_generator_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_checkpoint_generator_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_checkpoint_generator_js__);
 
 
@@ -175,5 +174,4 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ })
-
-/******/ });
+/******/ ]);
