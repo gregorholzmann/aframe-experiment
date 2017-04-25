@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "budo --live --verbose --port 3000 --open",
-    "webpack": "./node_modules/.bin/webpack --config webpack.config.js"
+    "start": "npm run webpack & webpack-dev-server --inline --hot",
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,8 @@
   "devDependencies": {
     "budo": "^7.0.0",
     "import-glob": "^1.5.0",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.4"
   },
   "keywords": [
     "aframe",
