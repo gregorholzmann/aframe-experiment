@@ -11,7 +11,9 @@
     "url": "https://github.com/gregorholzmann/aframe-experiment"
   },
   "devDependencies": {
-    "budo": "^7.0.0"
+    "budo": "^7.0.0",
+    "import-glob": "^1.5.0",
+    "webpack": "^2.4.1"
   },
   "keywords": [
     "aframe",
