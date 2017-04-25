@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 52);
+/******/ 	return __webpack_require__(__webpack_require__.s = 158);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -9579,89 +9579,10 @@ module.exports = g;
 
 
 /***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-AFRAME.registerComponent('checkpoint-generator', {
-  init: function () {
-    // Solution for Creating Entities.
-    var sceneEl = document.querySelector('a-scene'); 
-    
-    for (var i = 0; i < 5; i++) {
-      var checkpointEl = document.createElement('a-cylinder');
-      checkpointEl.setAttribute('radius', 1);
-      checkpointEl.setAttribute('height', 0.1);
-      checkpointEl.setAttribute('color', '#39BB82');
-      checkpointEl.setAttribute('position', {x: 0, y: 0, z: -(10 * i)});
-      checkpointEl.setAttribute('checkpoint', {'offset': '0 1.6 0'});       
-      checkpointEl.setAttribute('handle-hover', true);     
-      sceneEl.appendChild(checkpointEl);
-    }
-  }
-});
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports) {
-
-      AFRAME.registerComponent('frame-generator', {
-        init: function () {
-          // Solution for Creating Entities.
-          var sceneEl = document.querySelector('a-scene'); 
-          
-          for (var i = 0; i < 5; i++) {
-            var frameEl = document.createElement('a-entity');
-            frameEl.setAttribute('gltf-model', '#frame');
-            frameEl.setAttribute('position', {x: -1.5, y: 2, z: -(10 * i) - .5});
-            frameEl.setAttribute('rotation', {x: 90, y: 90, z: 0});
-            frameEl.setAttribute('frame-hover', true);
-
-            var imgEl = document.createElement('a-image');            
-            imgEl.setAttribute('src', '#me');
-            imgEl.setAttribute('position', {x: -.5, y: 0, z: 0});
-            imgEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
-            imgEl.setAttribute('height', 1.75);
-            
-            
-            frameEl.appendChild(imgEl);            
-            sceneEl.appendChild(frameEl);
-          }
-        }
-      });
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-AFRAME.registerComponent('frame-hover', {
-    init: function () {
-        var el = this.el;
-        console.log(el);   
-        el.addEventListener('mouseenter', function () {
-            console.log(el);                        
-        });
-    }
-});
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports) {
-
-AFRAME.registerComponent('handle-hover', {
-        init: function () {
-          var el = this.el;
-          el.addEventListener('mouseenter', function () {
-            console.log('hi');
-            el.setAttribute('color', '#a442f4');  
-          });
-          el.addEventListener('mouseleave', function () {
-            el.setAttribute('color', '#39BB82');  
-          });
-        } 
-      });
-
-/***/ }),
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -89413,35 +89334,7 @@ module.exports = getWakeLock();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(44), __webpack_require__(154).setImmediate))
 
 /***/ }),
-/* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aframe__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aframe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_aframe__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_aframe_template_component__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_aframe_template_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_aframe_template_component__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_aframe_extras__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_aframe_extras___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_aframe_extras__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_hover_handler_js__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_hover_handler_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_hover_handler_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_frame_hover_js__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_frame_hover_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_frame_hover_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_frame_generator_js__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_frame_generator_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_frame_generator_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_checkpoint_generator_js__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_checkpoint_generator_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_checkpoint_generator_js__);
-
-
-
-
-
-
-
-
-
-/***/ }),
+/* 52 */,
 /* 53 */
 /***/ (function(module, exports) {
 
@@ -105175,6 +105068,23 @@ module.exports = (function(){
   }
 
 }())
+
+
+/***/ }),
+/* 158 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aframe__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_aframe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_aframe__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_aframe_template_component__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_aframe_template_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_aframe_template_component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_aframe_extras__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_aframe_extras___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_aframe_extras__);
+
+
+
 
 
 /***/ })

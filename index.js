@@ -1,6 +1,3 @@
-import { AFRAME } from 'aframe';
-import { aframeTemplate } from 'aframe-template-component';
-import { aframeExtras } from 'aframe-extras';
 import { hoverHandler } from './components/hover-handler.js';
 import { frameHover } from './components/frame-hover.js';
 import { frameGenerator } from './components/frame-generator.js';
