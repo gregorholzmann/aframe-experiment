@@ -11,9 +11,10 @@
 		<script src="./components/hover-handler.js"></script>
 		<script src="./components/checkpoint-generator.js"></script>
 		<script src="./components/frame-generator.js"></script>
+		<script src="./components/frame-hover.js"></script>
 	</head>
 	<body>
-		<a-scene debug stats fog="type: linear; color: #AAA" frame-generator checkpoint-generator>
+		<a-scene debug stats fog="type: exponential; color: red" frame-generator checkpoint-generator>
 
 			<a-assets>
 				<img id="me" src="./assets/images/me.jpg" />
@@ -29,11 +30,12 @@
 				<a-asset-item id="frame" src="./assets/models/frame.gltf"></a-asset-item>
 			</a-assets>
 
-			<a-grid></a-grid>
 			<a-sky color="#6EBAA7"></a-sky>
 			<!-- LIGHTING -->
 			<a-light type="ambient" color="#fff" intensity="0.5"></a-light>
 			<a-light type="spot" position="-5 5 0" penumbra="0.1" rotation="0 -45 0" angle="65" intensity="0.5"></a-light>
+
+			<a-entity geometry="primitive: plane; width: 10; height: 100;" material="color: red;" rotation="-90 0 0" position="0 0 -40"></a-entity>
 
 			<a-entity camera="userHeight: 1.6"
 				universal-controls="movementControls: checkpoint"

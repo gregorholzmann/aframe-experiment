@@ -8,6 +8,7 @@
             frameEl.setAttribute('gltf-model', '#frame');
             frameEl.setAttribute('position', {x: -1.5, y: 2, z: -(10 * i) - .5});
             frameEl.setAttribute('rotation', {x: 90, y: 90, z: 0});
+            frameEl.setAttribute('frame-hover', true);
 
             var imgEl = document.createElement('a-image');            
             imgEl.setAttribute('src', '#me');
