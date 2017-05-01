@@ -1,9 +1,13 @@
 AFRAME.registerComponent('frame-hover', {
     init: function () {
         var el = this.el;
-        console.log(el); 
+        let colorplate = el.querySelector('.colorplate');      
+        
         el.addEventListener('mouseenter', function () {
-            console.log('yo');                        
+            colorplate.setAttribute('visible', true);
+        });
+        el.addEventListener('mouseleave', function () {
+            colorplate.setAttribute('visible', false);
         });
     }
 });

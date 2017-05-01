@@ -3,22 +3,26 @@
         {
             "id": 1,
             "name": "Gregor",
-            "img": "http://pluscitizen.com/wp-content/uploads/2016/05/gregor.jpg"
+            "img": "http://pluscitizen.com/wp-content/uploads/2016/05/gregor.jpg",
+            "color": "#50c461"
         },
         {
             "id": 1,
             "name": "Graham",
-            "img": "http://pluscitizen.com/wp-content/uploads/2015/04/graham_2__large.jpg"
+            "img": "http://pluscitizen.com/wp-content/uploads/2015/04/graham_2__large.jpg",
+            "color": "#e02c98"
         },
         {
             "id": 1,
             "name": "Hana",
-            "img": "http://pluscitizen.com/wp-content/uploads/2016/11/PDX_Hana-Hiratsuka_1210.jpg"
+            "img": "http://pluscitizen.com/wp-content/uploads/2016/11/PDX_Hana-Hiratsuka_1210.jpg",
+            "color": "#75d1d6"
         },
         {
             "id": 1,
             "name": "Casandra",
-            "img": "http://pluscitizen.com/wp-content/uploads/2015/04/cg-edited__large.jpg"
+            "img": "http://pluscitizen.com/wp-content/uploads/2015/04/cg-edited__large.jpg",
+            "color": "#935d1f"
         }
     ]
 }
