@@ -6,7 +6,7 @@ AFRAME.registerComponent('frame-generator', {
     var sceneEl = document.querySelector('a-scene');
     
     getData().then(function(data) {
-      let people = data.citizens;
+      let people = data;
 
       people.forEach(function(person, i) {
         // create frame for each person
@@ -16,11 +16,10 @@ AFRAME.registerComponent('frame-generator', {
         frameEl.setAttribute('rotation', {x: 90, y: 90, z: 0});
         frameEl.setAttribute('frame-hover', true);
         frameEl.setAttribute('material', {'color': '#000000'});
-        console.log(frameEl);
 
         // add image as child of frame
         let imgEl = document.createElement('a-image');
-        imgEl.setAttribute('src', person.img);
+        imgEl.setAttribute('src', person.acf.user_image.sizes.large);
         imgEl.setAttribute('position', {x: -.5, y: 0, z: 0});
         imgEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
         imgEl.setAttribute('height', 1.75);
@@ -36,7 +35,7 @@ AFRAME.registerComponent('frame-generator', {
         // add color overlay as child of frame
         let colorPlateEl = document.createElement('a-entity');
         colorPlateEl.setAttribute('geometry', 'primitive: plane');
-        colorPlateEl.setAttribute('material', {'transparent': true, 'opacity': .25, 'color': person.color});
+        colorPlateEl.setAttribute('material', {'transparent': true, 'opacity': .25, 'color': person.acf.favorite_color});
         colorPlateEl.setAttribute('position', {x: -0.5, y: 0, z: 0});
         colorPlateEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
         colorPlateEl.setAttribute('scale', {x: 1, y: 1.75, z: 1});
@@ -44,7 +43,7 @@ AFRAME.registerComponent('frame-generator', {
         colorPlateEl.setAttribute('visible', false);
 
         let colorPlateTextEl = document.createElement('a-text');
-        colorPlateTextEl.setAttribute('value', 'Favorite color: ' + person.color);
+        colorPlateTextEl.setAttribute('value', 'Favorite color: ' + person.acf.favorite_color);
         colorPlateTextEl.setAttribute('position', {x: -0.5, y: 0, z: 0});
         colorPlateTextEl.setAttribute('rotation', {x: 0, y: 0, z: 0});
         colorPlateTextEl.setAttribute('width', '2');

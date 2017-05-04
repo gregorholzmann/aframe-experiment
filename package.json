@@ -12,6 +12,11 @@
     "url": "https://github.com/gregorholzmann/aframe-experiment"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
     "import-glob": "^1.5.0",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.4"
@@ -28,6 +33,7 @@
     "aframe-extras": "^3.5.0",
     "aframe-physics-system": "^1.4.0",
     "aframe-template-component": "^3.2.1",
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4"
   }
 }
