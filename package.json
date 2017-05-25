@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npm run webpack & webpack-dev-server --inline --hot --open --progress",
-    "webpack": "./node_modules/.bin/webpack --config webpack.config.js --watch"
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.js --watch",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,6 @@
     "aframe": "^0.5.0",
     "aframe-extras": "^3.5.0",
     "aframe-physics-system": "^1.4.0",
-    "aframe-redux-component": "^3.0.2",
     "aframe-template-component": "^3.2.1",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",

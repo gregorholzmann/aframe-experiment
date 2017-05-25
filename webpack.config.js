@@ -1,4 +1,7 @@
-var path = require('path');
+const path = require('path');
+const TARGET = process.env.npm_lifecycle_event;
+
+console.log(TARGET);
 
 module.exports = {
   entry: {

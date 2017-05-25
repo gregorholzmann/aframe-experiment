@@ -5,6 +5,7 @@ export function bootstrap() {
     return function(dispatch) {
         return getData()
         .then(response => {
+            console.log(response);
             dispatch(receiveInitialData(response));
         })
     }

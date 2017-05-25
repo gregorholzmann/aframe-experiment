@@ -31,7 +31,8 @@ export async function getData() {
             }
         )
         .then(function(response){
-            let onlyVisible = _.filter(response, function(person) {
+            let onlyVisible = _.filter(response, function(person, i) {
+                person.id = i;
                 return _.get(person, 'acf.show_on_staff_page');
             });
             return onlyVisible;

@@ -1,5 +1,4 @@
 import * as constants from '../constants';
-import { bootstrap } from '../actions'
 
 export const employees = (state = [], action) => {
     switch (action.type) {

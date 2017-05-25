@@ -3,27 +3,29 @@ import { bootstrap } from '../actions/';
 
 
 AFRAME.registerComponent('frame-generator', {
-  update: function () {
+  tick: function () {
     // Solution for Creating Entities.
     let sceneEl = document.querySelector('a-scene');
 
-    function select(state) {
-      return state
-    }
+    // console.log(sceneEl.systems.redux.store.getData());
 
-    let currentValue
-    function handleChange() {
-      let previousValue = currentValue
-      currentValue = select(store.getState())
+    // function select(state) {
+    //   return state
+    // }
 
-      if (previousValue !== currentValue) {
-        console.log('Some deep nested property changed from', previousValue, 'to', currentValue)
-      }
-    }
+    // let currentValue
+    // function handleChange() {
+    //   let previousValue = currentValue
+    //   currentValue = select(store.getState())
 
-    let unsubscribe = store.subscribe(handleChange);
-    unsubscribe();
-    console.log(store.getState());
+    //   if (previousValue !== currentValue) {
+    //     console.log('Some deep nested property changed from', previousValue, 'to', currentValue)
+    //   }
+    // }
+
+    // let unsubscribe = store.subscribe(handleChange);
+    // unsubscribe();
+    // console.log(store.getState());
 
 
     // getData().then(function(data) {
