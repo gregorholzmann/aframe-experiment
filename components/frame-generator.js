@@ -21,23 +21,23 @@ AFRAME.registerComponent('frame-generator', {
         // add image as child of frame
         let imgEl = document.createElement('a-image');
         imgEl.setAttribute('src', person.acf.user_image.sizes.large);
-        imgEl.setAttribute('position', {x: -.5, y: 0, z: 0});
-        imgEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
-        imgEl.setAttribute('height', 1.75);
+        imgEl.setAttribute('position', {x: -0.5, y: 20, z: -0.7});
+        imgEl.setAttribute('height', 30);
+        imgEl.setAttribute('width', 20);
 
         // add name as child of frame
         let nameEl = document.createElement('a-text');
         nameEl.setAttribute('value', person.name);
-        nameEl.setAttribute('position', {x: -0.5, y: 0.15, z: 0.8});
-        nameEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
+        nameEl.setAttribute('position', {x: -0.5, y: 3.5, z: 4});
+        nameEl.setAttribute('scale', {x: 15, y: 15, z: 0});
         nameEl.setAttribute('align', 'center');
         nameEl.setAttribute('width', '5');
 
         // add title as child of frame
         let titleEl = document.createElement('a-text');
         titleEl.setAttribute('value', person.acf.job_title);
-        titleEl.setAttribute('position', {x: -0.5, y: 0.15, z: 1});
-        titleEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
+        titleEl.setAttribute('position', {x: -0.5, y: 0.5, z: 4});
+        titleEl.setAttribute('scale', {x: 15, y: 15, z: 0});
         titleEl.setAttribute('align', 'center');
         titleEl.setAttribute('width', '3');
 
@@ -45,15 +45,14 @@ AFRAME.registerComponent('frame-generator', {
         let colorPlateEl = document.createElement('a-entity');
         colorPlateEl.setAttribute('geometry', 'primitive: plane');
         colorPlateEl.setAttribute('material', {'transparent': true, 'opacity': .25, 'color': person.acf.favorite_color});
-        colorPlateEl.setAttribute('position', {x: -0.5, y: 0, z: 0});
-        colorPlateEl.setAttribute('rotation', {x: -90, y: 0, z: 0});
-        colorPlateEl.setAttribute('scale', {x: 1, y: 1.75, z: 1});
+        colorPlateEl.setAttribute('position', {x: -0.5, y: 20, z: 0});
+        colorPlateEl.setAttribute('scale', {x: 20, y: 30, z: 1});
         colorPlateEl.setAttribute('class', 'colorplate');
         colorPlateEl.setAttribute('visible', false);
 
         let colorPlateTextEl = document.createElement('a-text');
         colorPlateTextEl.setAttribute('value', 'Favorite color: ' + person.acf.favorite_color);
-        colorPlateTextEl.setAttribute('position', {x: -0.5, y: 0, z: 0});
+        colorPlateTextEl.setAttribute('position', {x: -0.45, y: -0.4, z: 0});
         colorPlateTextEl.setAttribute('rotation', {x: 0, y: 0, z: 0});
         colorPlateTextEl.setAttribute('width', '2');
 
