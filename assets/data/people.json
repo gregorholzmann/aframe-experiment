@@ -1,101 +1,283 @@
-[
-    {
-        "name": "Anika Hedstrom",
-        "link": "https:\/\/pluscitizen.com\/author\/anika-hedstrom\/",
-        "acf": {
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/09\/anika-hedstrom.jpg"
-                }
-            }
-        }
-    }, {
-        "name": "Becca Charlier-Matthews",
-        "link": "https:\/\/pluscitizen.com\/author\/becca-charlier-matthews\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Becca-Charlier-Matthews_0851_BW.jpg"
-                }
-            },
-            "favorite_color": "#ffa50a",
-            "job_title": "Visual Designer"
-        }
-    }, {
-        "name": "Brooke Wendt",
-        "link": "https:\/\/pluscitizen.com\/author\/brooke-wendt\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/14_1001_citizen_pdx_brooke-wendt_0533-edit_2__large.jpg"
-                }
-            },
-            "favorite_color": "#820707",
-            "job_title": "Design Researcher"
-        }
-    }, {
-        "name": "Casandra Gilray",
-        "link": "https:\/\/pluscitizen.com\/author\/casandra-gilray\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/cg-edited__large.jpg"
-                }
-            },
-            "favorite_color": "#000000",
-            "job_title": "Senior Design Strategist"
-        }
-    }, {
-        "name": "Citizen Inc.",
-        "link": "https:\/\/pluscitizen.com\/author\/citizen-inc\/",
-        "acf": {
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/03\/silhouette-female__large.jpg"
-                }
-            }
-        }
-    }, {
-        "name": "Craig Higdon",
-        "link": "https:\/\/pluscitizen.com\/author\/craigadmin\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/craig_final_sized__large.jpg"
-                }
-            },
-            "favorite_color": "#003153",
-            "job_title": "Director of Business Development"
-        }
-    }, {
-        "name": "Donald Carson",
-        "link": "https:\/\/pluscitizen.com\/author\/donald-carson\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Donald-Carson_1144.jpg"
-                }
-            },
-            "favorite_color": "#ffffff",
-            "job_title": "Content Strategy Director"
-        }
-    }, {
-        "name": "Doug Merritt",
-        "link": "https:\/\/pluscitizen.com\/author\/doug-merritt\/",
-        "acf": {
-            "show_on_staff_page": true,
-            "user_image": {
-                "sizes": {
-                    "large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/0028_doug-merritt_result__large.jpg"
-                }
-            },
-            "favorite_color": "#a2b33c",
-            "job_title": "Art Director"
-        }
-    }
-]
+[{
+	"name": "Anika Hedstrom",
+	"link": "https:\/\/pluscitizen.com\/author\/anika-hedstrom\/",
+	"acf": {
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/09\/anika-hedstrom.jpg"
+			}
+		}
+	}
+}, {
+	"name": "Becca Charlier-Matthews",
+	"link": "https:\/\/pluscitizen.com\/author\/becca-charlier-matthews\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Becca-Charlier-Matthews_0851_BW.jpg"
+			}
+		},
+		"favorite_color": "#ffa50a",
+		"job_title": "Visual Designer"
+	}
+}, {
+	"name": "Brooke Wendt",
+	"link": "https:\/\/pluscitizen.com\/author\/brooke-wendt\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/14_1001_citizen_pdx_brooke-wendt_0533-edit_2__large.jpg"
+			}
+		},
+		"favorite_color": "#820707",
+		"job_title": "Design Researcher"
+	}
+}, {
+	"name": "Casandra Gilray",
+	"link": "https:\/\/pluscitizen.com\/author\/casandra-gilray\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/cg-edited__large.jpg"
+			}
+		},
+		"favorite_color": "#000000",
+		"job_title": "Senior Design Strategist"
+	}
+}, {
+	"name": "Citizen Inc.",
+	"link": "https:\/\/pluscitizen.com\/author\/citizen-inc\/",
+	"acf": {
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/03\/silhouette-female__large.jpg"
+			}
+		}
+	}
+}, {
+	"name": "Craig Higdon",
+	"link": "https:\/\/pluscitizen.com\/author\/craigadmin\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/craig_final_sized__large.jpg"
+			}
+		},
+		"favorite_color": "#003153",
+		"job_title": "Director of Business Development"
+	}
+}, {
+	"name": "Donald Carson",
+	"link": "https:\/\/pluscitizen.com\/author\/donald-carson\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Donald-Carson_1144.jpg"
+			}
+		},
+		"favorite_color": "#ffffff",
+		"job_title": "Content Strategy Director"
+	}
+}, {
+	"name": "Doug Merritt",
+	"link": "https:\/\/pluscitizen.com\/author\/doug-merritt\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/0028_doug-merritt_result__large.jpg"
+			}
+		},
+		"favorite_color": "#a2b33c",
+		"job_title": "Art Director"
+	}
+}, {
+	"name": "Eric Curtis",
+	"link": "https:\/\/pluscitizen.com\/author\/ecurtisadmin\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/14_1001_citizen_pdx_eric-curtis_0448-edit2__large.jpg"
+			}
+		},
+		"favorite_color": "#26c5ff",
+		"job_title": "Creative Technology Director"
+	}
+}, {
+	"name": "Graham Barey",
+	"link": "https:\/\/pluscitizen.com\/author\/graham-barey\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2017\/05\/17_0501_Graham_Barey_Citizen_PDX_0004-1.jpg"
+			}
+		},
+		"favorite_color": "#003366",
+		"job_title": "Art Director"
+	}
+}, {
+	"name": "Hana Hiratsuka",
+	"link": "https:\/\/pluscitizen.com\/author\/hana-hiratsuka\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/PDX_Hana-Hiratsuka_1210.jpg"
+			}
+		},
+		"favorite_color": "#cdff31",
+		"job_title": "Visual Designer"
+	}
+}, {
+	"name": "Jen Cyr",
+	"link": "https:\/\/pluscitizen.com\/author\/jencyr\/",
+	"acf": {
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Jen-Cyr_0660.jpg"
+			}
+		},
+		"favorite_color": "#c5c8d8",
+		"job_title": "Marketing Coordinator"
+	}
+}, {
+	"name": "Jenny Moede",
+	"link": "https:\/\/pluscitizen.com\/author\/jennymoede\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/jm-edited__large.jpg"
+			}
+		},
+		"favorite_color": "#872bff",
+		"job_title": "Chief Executive Officer"
+	}
+}, {
+	"name": "Kacey Klonsky",
+	"link": "https:\/\/pluscitizen.com\/author\/kacey-klonsky\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/kacey__large.jpg"
+			}
+		},
+		"favorite_color": "#00ebd3",
+		"job_title": "Video Director"
+	}
+}, {
+	"name": "Kate Gordon-Bloomfield",
+	"link": "https:\/\/pluscitizen.com\/author\/kategb\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/11\/Kate-Gordon-Bloomfield_1117.jpg"
+			}
+		},
+		"favorite_color": "#283fd6",
+		"job_title": "Technical Project Manager"
+	}
+}, {
+	"name": "Kate Sommers",
+	"link": "https:\/\/pluscitizen.com\/author\/kate-sommers\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/img_0342.cr2_kate-sommers_result__large.jpg"
+			}
+		},
+		"favorite_color": "#ff5252",
+		"job_title": "Director of Account Strategy"
+	}
+}, {
+	"name": "Matt Payton",
+	"link": "https:\/\/pluscitizen.com\/author\/matt-payton\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/05\/matt.jpg"
+			}
+		},
+		"favorite_color": "#1597d4",
+		"job_title": "Senior Project Manager"
+	}
+}, {
+	"name": "Matt Witkamp",
+	"link": "https:\/\/pluscitizen.com\/author\/matt-witkamp\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/witkamp__large.jpg"
+			}
+		},
+		"favorite_color": "#197589",
+		"job_title": "Emerging Technology Strategist"
+	}
+}, {
+	"name": "Piper carr",
+	"link": "https:\/\/pluscitizen.com\/author\/piper-carr\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/14_1001_citizen_pdx_piper-carr_0844-edit21.jpg"
+			}
+		},
+		"favorite_color": "#304757",
+		"job_title": "Managing Partner, Chief Strategy Officer"
+	}
+}, {
+	"name": "Ryan Mowery",
+	"link": "https:\/\/pluscitizen.com\/author\/ryanmowery\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2016\/05\/ryan.jpg"
+			}
+		},
+		"favorite_color": "#404040",
+		"job_title": "Interaction Designer"
+	}
+}, {
+	"name": "Sce Pike",
+	"link": "https:\/\/pluscitizen.com\/author\/sce-pike\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/img_0349.cr2_sce-pike_result__large.jpg"
+			}
+		},
+		"favorite_color": "#ffcc33",
+		"job_title": "Managing Partner, Chief Experience Officer"
+	}
+}, {
+	"name": "Scott Brown",
+	"link": "https:\/\/pluscitizen.com\/author\/scott-brown\/"
+}, {
+	"name": "Scott Brown",
+	"link": "https:\/\/pluscitizen.com\/author\/scottbadmin\/",
+	"acf": {
+		"show_on_staff_page": true,
+		"user_image": {
+			"sizes": {
+				"large": "https:\/\/pluscitizen.com\/wp-content\/uploads\/2015\/04\/0032_scott-brown_result__large.jpg"
+			}
+		},
+		"favorite_color": "#198ccf",
+		"job_title": "Executive Creative Director"
+	}
+}]

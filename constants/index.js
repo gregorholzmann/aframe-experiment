@@ -1,1 +1,2 @@
 export const RECEIVE_INITIAL_DATA = 'RECEIVE_INITIAL_DATA';
+export const NEXT_PAGE = 'NEXT_PAGE';

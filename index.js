@@ -7,6 +7,7 @@ if (module.hot) {
 import { hoverHandler } from './components/hover-handler.js';
 import { frameHover } from './components/frame-hover.js';
 import { frameGenerator } from './components/frame-generator.js';
+import { nextPage } from './components/next-page.js';
 
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';

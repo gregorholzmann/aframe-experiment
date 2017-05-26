@@ -11,7 +11,7 @@ AFRAME.registerComponent('frame-generator', {
         let sceneEl = document.querySelector('a-scene');
         let people = store.getState();
 
-        people.forEach(function(person, i) {
+        people.visibileCitizens.forEach(function(person, i) {
             // create frame for each person
             let frameEl = document.createElement('a-entity');
             frameEl.setAttribute('obj-model', { 'obj': '#frame-obj', 'mtl': '#frame-mtl'});
@@ -20,6 +20,9 @@ AFRAME.registerComponent('frame-generator', {
             frameEl.setAttribute('frame-hover', true);
             frameEl.setAttribute('class', 'frame');
             frameEl.setAttribute('look-at', '0 1 0');
+            frameEl.addEventListener('someEvent', function (event) {
+                console.log('triggered');
+            });
 
             // add image as child of frame
             let imgEl = document.createElement('a-image');
@@ -68,5 +71,8 @@ AFRAME.registerComponent('frame-generator', {
 
             sceneEl.appendChild(frameEl);
         });
+    },
+    update: function(oldData) {
+        console.log(oldData);
     }
 });

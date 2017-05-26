@@ -1,10 +1,10 @@
 AFRAME.registerComponent('frame-hover', {
+    multiple: true,
     init: function () {
         var el = this.el;
         let colorplate = el.querySelector('.colorplate');
 
         el.addEventListener('mouseenter', function () {
-            console.log('hovered');
             colorplate.setAttribute('visible', true);
         });
         el.addEventListener('mouseleave', function () {

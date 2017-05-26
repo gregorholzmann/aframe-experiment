@@ -5,9 +5,15 @@ export function bootstrap() {
     return function(dispatch) {
         return getData()
         .then(response => {
-            console.log(response);
             dispatch(receiveInitialData(response));
         })
+    }
+}
+
+export function nextPage() {
+    console.log('action called');
+    return {
+        type: constants.NEXT_PAGE
     }
 }
 
