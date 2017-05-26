@@ -5,7 +5,6 @@ if (module.hot) {
 }
 
 require('file-loader?name=[name].[ext]!./index.html');
-require('file-loader?name=[name].[ext]!./app.html');
 require.context('./assets');
 
 import { hoverHandler } from './components/hover-handler.js';
