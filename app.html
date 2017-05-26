@@ -6,14 +6,13 @@
 		<meta name="description" content="Hello, World! - A-Frame">
 		<meta http-equiv="origin-trial" data-feature="WebVR" data-expires="2017-06-12" content="AgwKyZ4usocuNLQcdWzmN8cG3QQTWt6W0fTGTjibNOOMe7uqmqyhXz0fsaf7zPqqBLIs2fXoGGB5VqDj1CLLBg4AAABheyJvcmlnaW4iOiJodHRwczovL2dyZWdvcmhvbHR6LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVlIiLCJleHBpcnkiOjE0OTczMTIwMDAsImlzU3ViZG9tYWluIjp0cnVlfQ==">
 		<!-- @TODO: suck these all up w/ webpack -->
-		<script src="./dist/vendor.js"></script>
-		<script src="./dist/app.js"></script>
+		<script src="./vendor.js"></script>
+		<script src="./app.js"></script>
 	</head>
 	<body>
 		<a-scene debug stats fog="type: exponential; color: #c75b39" frame-generator>
 
 			<a-assets>
-				<img id="me" src="./assets/images/me.jpg" />
 				<a-asset-item id="frame-obj" src="./assets/models/frame.obj"></a-asset-item>
 				<a-asset-item id="frame-mtl" src="./assets/models/frame.mtl"></a-asset-item>
 			</a-assets>

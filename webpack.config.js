@@ -23,6 +23,14 @@ module.exports = {
             presets: ['env']
           }
         }
+      },
+      {
+        test: /\.(mtl|obj|jpg|png)$/,
+        loader: 'file-loader?name=./assets/models/[name].[ext]'
+      },
+      {
+        test: /\.json$/,
+        loader: 'file-loader?name=./assets/data/[name].[ext]'
       }
     ]
   }

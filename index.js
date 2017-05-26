@@ -4,6 +4,10 @@ if (module.hot) {
   module.hot.accept()
 }
 
+require('file-loader?name=[name].[ext]!./index.html');
+require('file-loader?name=[name].[ext]!./app.html');
+require.context('./assets');
+
 import { hoverHandler } from './components/hover-handler.js';
 import { frameHover } from './components/frame-hover.js';
 import { frameGenerator } from './components/frame-generator.js';
